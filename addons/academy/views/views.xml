@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
 <!--
-    <record model="ir.ui.view" id="academy.list">
-      <field name="name">academy list</field>
-      <field name="model">academy.academy</field>
+    <record model="ir.ui.view" id="openacademy.list">
+      <field name="name">openacademy list</field>
+      <field name="model">openacademy.openacademy</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -17,17 +17,17 @@
 
     <!-- actions opening views on models -->
 <!--
-    <record model="ir.actions.act_window" id="academy.action_window">
-      <field name="name">academy window</field>
-      <field name="res_model">academy.academy</field>
+    <record model="ir.actions.act_window" id="openacademy.action_window">
+      <field name="name">openacademy window</field>
+      <field name="res_model">openacademy.openacademy</field>
       <field name="view_mode">tree,form</field>
     </record>
 -->
 
     <!-- server action to the one above -->
 <!--
-    <record model="ir.actions.server" id="academy.action_server">
-      <field name="name">academy server</field>
+    <record model="ir.actions.server" id="openacademy.action_server">
+      <field name="name">openacademy server</field>
       <field name="model_id" ref="model_academy_academy"/>
       <field name="state">code</field>
       <field name="code">
@@ -42,19 +42,19 @@
 
     <!-- Top menu item -->
 <!--
-    <menuitem name="academy" id="academy.menu_root"/>
+    <menuitem name="openacademy" id="openacademy.menu_root"/>
 -->
     <!-- menu categories -->
 <!--
-    <menuitem name="Menu 1" id="academy.menu_1" parent="academy.menu_root"/>
-    <menuitem name="Menu 2" id="academy.menu_2" parent="academy.menu_root"/>
+    <menuitem name="Menu 1" id="openacademy.menu_1" parent="openacademy.menu_root"/>
+    <menuitem name="Menu 2" id="openacademy.menu_2" parent="openacademy.menu_root"/>
 -->
     <!-- actions -->
 <!--
-    <menuitem name="List" id="academy.menu_1_list" parent="academy.menu_1"
-              action="academy.action_window"/>
-    <menuitem name="Server to list" id="academy" parent="academy.menu_2"
-              action="academy.action_server"/>
+    <menuitem name="List" id="openacademy.menu_1_list" parent="openacademy.menu_1"
+              action="openacademy.action_window"/>
+    <menuitem name="Server to list" id="openacademy" parent="openacademy.menu_2"
+              action="openacademy.action_server"/>
 -->
   </data>
 </odoo>
